@@ -147,7 +147,7 @@ function App() {
       ),
     itemToString: item => (item ? item.name : ''),
     scrollIntoView: () => {},
-    onHighlighterIndexChange: ({highlightedIndex}) =>
+    onHighlightedIndexChange: ({highlightedIndex}) =>
       highlightedIndex !== -1 && rowVirtualizer.scrollToIndex(highlightedIndex),
     // we want to override Downshift's scrollIntoView functionality because
     // react-virtual will handle scrolling for us:
